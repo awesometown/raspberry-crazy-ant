@@ -13,7 +13,8 @@ libraryDependencies ++= Seq(
 	"org.webjars" % "bootstrap" % "3.1.0",
 	"be.objectify" %% "deadbolt-java" % "2.2-RC2",
 	"com.google.inject" % "guice" % "3.0",
-	"ma.glasnost.orika" % "orika-core" % "1.4.2"
+	"ma.glasnost.orika" % "orika-core" % "1.4.2",
+	"org.testng" % "testng" % "6.1.1"
 )
 
 playJavaSettings

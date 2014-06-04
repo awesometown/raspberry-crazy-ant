@@ -5,14 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Hand {
-	public List<Card> cards;
+	private List<Card> cards;
 
 	public Hand() {
-		this.cards = new ArrayList<Card>();
+		this.setCards(new ArrayList<Card>());
 	}
 
 	public Hand(List<Card> cards) {
-		this.cards = cards;
+		this.setCards(cards);
 	}
 
 	public Hand(Card ... cards) {
@@ -20,6 +20,14 @@ public class Hand {
 	}
 
 	public void addCard(Card card) {
-		cards.add(card);
+		getCards().add(card);
+	}
+
+	public List<Card> getCards() {
+		return cards;
+	}
+
+	public void setCards(List<Card> cards) {
+		this.cards = cards;
 	}
 }
